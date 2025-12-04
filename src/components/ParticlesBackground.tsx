@@ -19,13 +19,14 @@ const ParticlesBackground = () => {
     const connectionDistance = 150
 
     class Particle {
-      x: number
-      y: number
-      vx: number
-      vy: number
-      radius: number
+      x: number = 0
+      y: number = 0
+      vx: number = 0
+      vy: number = 0
+      radius: number = 0
 
       constructor() {
+        if (!canvas) return
         this.x = Math.random() * canvas.width
         this.y = Math.random() * canvas.height
         this.vx = (Math.random() - 0.5) * 0.5
@@ -34,6 +35,7 @@ const ParticlesBackground = () => {
       }
 
       update() {
+        if (!canvas) return
         this.x += this.vx
         this.y += this.vy
 

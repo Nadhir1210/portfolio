@@ -10,7 +10,7 @@ interface Badge {
 }
 
 const AchievementBadges = () => {
-  const [badges, setBadges] = useState<Badge[]>([
+  const [badges] = useState<Badge[]>([
     { id: 1, icon: '🎓', title: 'Education Master', description: 'Engineering Student', unlocked: true },
     { id: 2, icon: '💼', title: 'Professional', description: '4+ Internships Completed', unlocked: true },
     { id: 3, icon: '🏆', title: 'IEEE Champion', description: '2nd Place IEEE Xtreme', unlocked: true },
