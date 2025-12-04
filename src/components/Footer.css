@@ -1,0 +1,22 @@
+.footer {
+  background: var(--bg-alt);
+  color: var(--text);
+  padding: 2rem;
+  text-align: center;
+  margin-top: auto;
+  border-top: 1px solid var(--border);
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+}
+
+.footer-note {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}

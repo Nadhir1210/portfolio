@@ -1,0 +1,66 @@
+.scroll-indicator {
+  position: fixed;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: slideInRight 0.8s ease-out;
+}
+
+.scroll-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--border);
+  border: 2px solid var(--border);
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.scroll-dot:hover {
+  transform: scale(1.5);
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.scroll-dot.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  transform: scale(1.3);
+  box-shadow: 0 0 10px var(--primary);
+}
+
+.scroll-tooltip {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--bg);
+  color: var(--text);
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px var(--shadow);
+  pointer-events: none;
+}
+
+.scroll-dot:hover .scroll-tooltip {
+  opacity: 1;
+  visibility: visible;
+  right: 30px;
+}
+
+@media (max-width: 1024px) {
+  .scroll-indicator {
+    display: none;
+  }
+}

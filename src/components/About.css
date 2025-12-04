@@ -1,0 +1,16 @@
+.about {
+  background: var(--bg);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text-light);
+}
+
+.about-content p {
+  margin: 0;
+}

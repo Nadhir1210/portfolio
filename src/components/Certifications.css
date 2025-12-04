@@ -1,0 +1,162 @@
+.certifications {
+  background: var(--bg-alt);
+  padding: 4rem 2rem;
+}
+
+.cert-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cert-section,
+.leadership-section,
+.languages-section {
+  margin-bottom: 4rem;
+}
+
+.cert-section h3,
+.leadership-section h3,
+.languages-section h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.cert-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: var(--bg);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: fadeInUp 0.5s ease-out;
+  animation-fill-mode: both;
+}
+
+.cert-card:nth-child(1) { animation-delay: 0.05s; }
+.cert-card:nth-child(2) { animation-delay: 0.1s; }
+.cert-card:nth-child(3) { animation-delay: 0.15s; }
+.cert-card:nth-child(4) { animation-delay: 0.2s; }
+.cert-card:nth-child(5) { animation-delay: 0.25s; }
+.cert-card:nth-child(6) { animation-delay: 0.3s; }
+
+.cert-card:hover {
+  box-shadow: 0 8px 24px var(--shadow);
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--primary);
+}
+
+.cert-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.cert-card:hover .cert-icon {
+  transform: scale(1.3) rotate(10deg);
+}
+
+.cert-content {
+  flex: 1;
+}
+
+.cert-content h4 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.cert-content p {
+  font-size: 0.875rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin: 0;
+}
+
+.cert-view-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--primary);
+  font-size: 0.875rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.cert-view-link:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+.leadership-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.leadership-card {
+  background: var(--bg);
+}
+
+.leadership-card .description {
+  margin-top: 1rem;
+  color: var(--text-light);
+}
+
+.languages-section {
+  margin-bottom: 0;
+}
+
+.languages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.language-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg);
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.language-item:hover {
+  box-shadow: 0 4px 12px var(--shadow);
+  transform: translateY(-2px);
+}
+
+.language-name {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 1.125rem;
+}
+
+.language-level {
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .languages-grid {
+    grid-template-columns: 1fr;
+  }
+}

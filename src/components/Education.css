@@ -1,0 +1,18 @@
+.education {
+  background: var(--bg-alt);
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.education .card {
+  background: var(--bg);
+}
+
+.education .description {
+  margin-top: 1rem;
+  color: var(--text-light);
+}

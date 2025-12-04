@@ -1,0 +1,153 @@
+.achievements {
+  background: var(--bg);
+  padding: 4rem 2rem;
+}
+
+.achievements h3 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.badge-card {
+  background: var(--bg-alt);
+  border: 2px solid var(--border);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.badges-grid.show .badge-card {
+  animation: badgeUnlock 0.6s ease-out forwards;
+}
+
+.badge-card.unlocked {
+  border-color: var(--primary);
+  background: linear-gradient(135deg, var(--bg-alt) 0%, rgba(59, 130, 246, 0.1) 100%);
+}
+
+.badge-card.unlocked:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(59, 130, 246, 0.4);
+  border-color: var(--primary-hover);
+}
+
+.badge-card.locked {
+  opacity: 0.3;
+  filter: grayscale(100%);
+}
+
+.badge-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: float 3s ease-in-out infinite;
+  display: inline-block;
+}
+
+.badge-card:hover .badge-icon {
+  animation: bounce 0.6s ease;
+}
+
+.badge-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.badge-card.unlocked .badge-title {
+  background: linear-gradient(135deg, var(--text) 0%, var(--primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.badge-description {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin: 0;
+}
+
+.badge-shine {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 70%
+  );
+  animation: shine 3s ease-in-out infinite;
+}
+
+@keyframes badgeUnlock {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) rotate(-10deg);
+  }
+  60% {
+    transform: scale(1.1) rotate(5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  75% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .badges-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .badge-icon {
+    font-size: 3rem;
+  }
+
+  .badge-title {
+    font-size: 1rem;
+  }
+
+  .badge-description {
+    font-size: 0.8rem;
+  }
+}
