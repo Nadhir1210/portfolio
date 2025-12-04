@@ -14,17 +14,17 @@ const Certifications = () => {
     { 
       name: "CCNA 1 & 2 Certification", 
       issuer: "Cisco",
-      file: "/certifications/ccna-introduction-to-networks.png"
+      file: "./certifications/ccna-introduction-to-networks.png"
     },
     { 
       name: "CCNA Introduction to Networks - Certificate", 
       issuer: "Cisco",
-      file: "/certifications/nadhirbenhalima-3GI-CCNA1-S1-202-certificate (1).pdf"
+      file: "./certifications/nadhirbenhalima-3GI-CCNA1-S1-202-certificate (1).pdf"
     },
     { 
       name: "CCNA Introduction to Networks - Letter", 
       issuer: "Cisco",
-      file: "/certifications/nadhirbenhalima-3GI-CCNA1-S1-202-letter.pdf"
+      file: "./certifications/nadhirbenhalima-3GI-CCNA1-S1-202-letter.pdf"
     },
     { name: "BLS (Basic Life Support) Certification", issuer: "Healthcare" },
     { name: "Securinet OSINT Formation", issuer: "Securinet" },
@@ -32,28 +32,28 @@ const Certifications = () => {
     { 
       name: "IBM Blockchain Foundation Developer (BC0201EN)", 
       issuer: "IBM",
-      file: "/certifications/IBMDeveloperSkillsNetwork BC0201EN Certificate _ Cognitive Class.pdf"
+      file: "./certifications/IBMDeveloperSkillsNetwork BC0201EN Certificate _ Cognitive Class.pdf"
     },
     { 
       name: "Hadoop (BD0111EN)", 
       issuer: "IBM",
-      file: "/certifications/IBM BD0111EN Certificate _ Cognitive Class.pdf"
+      file: "./certifications/IBM BD0111EN Certificate _ Cognitive Class.pdf"
     },
     { 
       name: "Big Data Fundamentals (BD0101EN)", 
       issuer: "IBM",
-      file: "/certifications/IBM BD0101EN Certificate _ Cognitive Class.pdf"
+      file: "./certifications/IBM BD0101EN Certificate _ Cognitive Class.pdf"
     },
     { 
       name: "Spark Fundamentals (BD0211EN)", 
       issuer: "BigDataUniversity",
-      file: "/certifications/BigDataUniversity BD0211EN Certificate _ Cognitive Class.pdf"
+      file: "./certifications/BigDataUniversity BD0211EN Certificate _ Cognitive Class.pdf"
     },
     { name: "Supervised & Unsupervised Learning with scikit-learn", issuer: "Datacamp" },
     { 
       name: "Introduction to Data Science (DS0101EN)", 
       issuer: "Cognitive Class",
-      file: "/certifications/Cognitive Class DS0101EN Certificate _ Cognitive Class.pdf"
+      file: "./certifications/Cognitive Class DS0101EN Certificate _ Cognitive Class.pdf"
     },
     { name: "Intermediate to R", issuer: "Online Course" }
   ]

@@ -34,7 +34,7 @@ const Header = () => {
             <a onClick={() => scrollToSection('skills')}>Skills</a>
             <a onClick={() => scrollToSection('certifications')}>Certifications</a>
             <a onClick={() => scrollToSection('contact')}>Contact</a>
-            <a href="/assets/Nadhir-Benhalima.pdf" target="_blank" rel="noopener" className="cv-link">
+            <a href="./assets/Nadhir-Benhalima.pdf" target="_blank" rel="noopener" className="cv-link">
               CV (PDF)
             </a>
           </nav>

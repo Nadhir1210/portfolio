@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="hero-content">
         <div className="hero-text">
           <div className="profile-image-mobile">
-            <img src="/assets/profile.jpg" alt="Nadhir Ben Halima" />
+            <img src="./assets/profile.jpg" alt="Nadhir Ben Halima" />
           </div>
           <h2 className="hero-title">
             <TypingEffect 
@@ -25,7 +25,7 @@ const Hero = () => {
             Specializing in Data Science, NLP, and building intelligent systems that solve real-world problems.
           </p>
           <div className="hero-actions">
-            <a href="/assets/Nadhir-Benhalima.pdf" target="_blank" rel="noopener" className="btn btn-primary">
+            <a href="./assets/Nadhir-Benhalima.pdf" target="_blank" rel="noopener" className="btn btn-primary">
               View CV (PDF)
             </a>
             <a 
@@ -38,7 +38,7 @@ const Hero = () => {
         </div>
         <div className="hero-visual">
           <div className="profile-image-container">
-            <img src="/assets/profile.jpg" alt="Nadhir Ben Halima" className="profile-image" />
+            <img src="./assets/profile.jpg" alt="Nadhir Ben Halima" className="profile-image" />
           </div>
         </div>
       </div>
